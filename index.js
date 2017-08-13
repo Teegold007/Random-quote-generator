@@ -12,8 +12,8 @@
                 success: function(data) {
                 $("#quote-text").html('"' + data.quote + '"');
                 $("#quote-author").html('&mdash;' + ' ' + data.author);  
-                $('#twitter-quote').attr('href', 'https://twitter.com/intent/tweet?text=' + '"' + data.quote + '"' + ' ' + ' ' + ' ' + ' \u2014' + ' ' + data.author).attr('target', '_blank');
-                $('#facebook-quote').attr('href', 'https://twitter.com/intent/tweet?text=' + '"' + data.quote + '"' + ' ' + ' ' + ' ' + ' \u2014' + ' ' + data.author).attr('target', '_blank');
+                $('#tweet-quote').attr('href', 'https://twitter.com/intent/tweet?text=' + '"' + data.quote + '"' + ' ' + ' ' + ' ' + ' \u2014' + ' ' + data.author).attr('target', '_blank');
+                $('#facebook-quote').attr('href', 'https://m.facebook.com/?hrc=1&refsrc=http%3A%2F%2Fh.facebook.com%2Fhr%2Fr&_rdr=' + '"' + data.quote + '"' + ' ' + ' ' + ' ' + ' \u2014' + ' ' + data.author).attr('target', '_blank');
             
                 },
                 error: function(err) { alert("Internet Disconnected!"); },
